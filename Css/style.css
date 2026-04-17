@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  background-color: #001;
+  font-family: "Cairo", sans-serif;
+  display: flex;
+}
+.menu {
+  background-color: #123;
+  height: 100vh;
+  width: 90px;
+  padding: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.menu:hover {
+  width: 260px;
+}
+.menu ul {
+  list-style: none;
+  position: relative;
+  height: 95%;
+}
+.profile {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.profile img {
+  width: 50px;
+  border-radius: 50%;
+}
+.profile h2 {
+  font-size: 25px;
+}
+.menu ul li a {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.menu ul li a:hover,
+.menu .active {
+  background-color: #ffffff55;
+}
+.menu .log-out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.menu .log-out a {
+  background-color: #aa000087;
+  height: 60px;
+}
+.menu .log-out a:hover {
+  background-color: #a00;
+}
+.menu ul li a i {
+  font-size: 25px;
+}
+/* Start content */
+.content {
+  width: 100%;
+  padding: 15px;
+}
+.content .dashboard {
+  margin-bottom: 10px;
+}
+.content .title-info {
+  background-color: #4800ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.content .title-info h3 {
+  font-size: 20px;
+}
+.content .dashboard .info {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+.content .dashboard .info .box {
+  background-color: #123;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.content .dashboard .info .box:hover {
+  background-color: #ffffff55;
+}
+.content .dashboard .info .box i {
+  font-size: 40px;
+}
+.content .dashboard .info .box .box-info {
+  text-align: center;
+}
+.content .dashboard .info .box .box-info span {
+  display: block;
+}
+.content .dashboard .info .box .box-info .number {
+  font-size: 30px;
+}
+table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 8px;
+}
+th {
+  background-color: #4800ff;
+  border-radius: 10px;
+  padding: 10px;
+}
+td {
+  background-color: #123;
+  border-radius: 10px;
+  padding: 10px;
+}
+td:hover {
+  background-color: #ffffff55;
+}
+.price,
+.count {
+  padding: 5px;
+  border-radius: 5px
+}
+.price {
+  background-color: #ff0000;
+}
+.count {
+  background-color: green;
+}
